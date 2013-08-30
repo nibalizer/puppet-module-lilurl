@@ -9,7 +9,7 @@ class lilurl (
   # manage packages
 
   if $manage_packages {
-    $pkgs = ['sqlite3'
+    $pkgs = ['sqlite3',
              'ruby-sqlite3']
     package { $pkgs:
       ensure => present,
