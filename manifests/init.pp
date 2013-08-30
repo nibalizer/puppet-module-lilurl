@@ -17,9 +17,7 @@ class lilurl (
   }
 
   if $manage_gems {
-    $gems = ['rubygems',
-             'sinatra',
-             'digest-sha1']
+    $gems = ['sinatra',]
     package { $gems:
       ensure   => present,
       provider => 'gem',
