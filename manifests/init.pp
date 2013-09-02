@@ -17,7 +17,10 @@ class lilurl (
   }
 
   if $manage_gems {
-    $gems = ['sinatra',]
+    $gems = ['sinatra',
+             'sinatra-contrib',
+             'sqlite3',
+             'json',]
     package { $gems:
       ensure   => present,
       provider => 'gem',
